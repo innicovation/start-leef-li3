@@ -1,0 +1,14 @@
+localhost:2020
+
+gzip
+
+root webroot
+fastcgi / localhost:9000 php
+
+log resources/tmp/logs/access.log
+errors resources/tmp/logs/error.log
+
+rewrite / {
+	if {file} not favicon.ico
+	to {path} {path}/ /index.php?url={query}
+}
