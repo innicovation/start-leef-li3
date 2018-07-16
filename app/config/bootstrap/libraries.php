@@ -95,6 +95,7 @@ require LITHIUM_LIBRARY_PATH . '/lithium/net/http/Request.php';
 require LITHIUM_LIBRARY_PATH . '/lithium/net/http/Response.php';
 require LITHIUM_LIBRARY_PATH . '/lithium/net/http/Route.php';
 require LITHIUM_LIBRARY_PATH . '/lithium/net/http/Router.php';
+require LITHIUM_LIBRARY_PATH . '/lithium/core/MergeInheritable.php';
 require LITHIUM_LIBRARY_PATH . '/lithium/action/Controller.php';
 require LITHIUM_LIBRARY_PATH . '/lithium/action/Dispatcher.php';
 require LITHIUM_LIBRARY_PATH . '/lithium/action/Request.php';

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cfbceecab448dd481c98e00a734957a1",
+    "content-hash": "92bb5ef0bc8b6770903071842f36053e",
     "packages": [
         {
             "name": "composer/installers",
@@ -128,24 +128,32 @@
         },
         {
             "name": "unionofrad/lithium",
-            "version": "v1.1.1",
+            "version": "2.0.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/UnionOfRAD/lithium.git",
-                "reference": "bec3f4fdf61ea5002904754f43941ad1430ecec7"
+                "reference": "ed152179abaa556d72911de561b90a48c776bbd1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/UnionOfRAD/lithium/zipball/bec3f4fdf61ea5002904754f43941ad1430ecec7",
-                "reference": "bec3f4fdf61ea5002904754f43941ad1430ecec7",
+                "url": "https://api.github.com/repos/UnionOfRAD/lithium/zipball/ed152179abaa556d72911de561b90a48c776bbd1",
+                "reference": "ed152179abaa556d72911de561b90a48c776bbd1",
                 "shasum": ""
             },
             "require": {
                 "composer/installers": "1.*",
-                "php": "^5.5.14 || ^7.0.3"
+                "php": "~7.0.3 || ~7.1.0"
             },
             "require-dev": {
                 "unionofrad/li3_fixtures": "^1.1"
+            },
+            "suggest": {
+                "ext-curl": "For the Curl Socket adapter.",
+                "ext-memcached": "For the Memcache Cache adapter.",
+                "ext-mongo": "For the MongoDb Datasource. ",
+                "ext-openssl": "For the Encrypt Session strategy.",
+                "ext-pdo": "For the MySql, Postgres and Sqlite Datasources.",
+                "ext-redis": "For the Redis Cache adapter."
             },
             "bin": [
                 "console/li3"
@@ -163,24 +171,26 @@
                     "name": "The Community"
                 }
             ],
-            "description": "The core library of the Lithium PHP framework",
+            "description": "The li₃ PHP framework",
             "homepage": "http://li3.me",
             "keywords": [
                 "framework",
                 "li3",
                 "lithium"
             ],
-            "time": "2017-12-22T08:03:51+00:00"
+            "time": "2018-05-11T01:41:10+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "unionofrad/lithium": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=5.5.0"
+        "php": ">=7.1"
     },
     "platform-dev": []
 }

@@ -18,7 +18,6 @@
  * @see lithium\aop\Filters
  */
 
-use Exception;
 use lithium\action\Dispatcher;
 use lithium\aop\Filters;
 use lithium\core\Environment;
